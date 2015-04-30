@@ -1,0 +1,44 @@
+/*
+* Program
+*/
+
+#hide {
+	display: none;
+}
+
+#program {
+	color: black;
+}
+
+#program h2{
+	text-align: center;
+	font-size: 2.5em;
+	font-weight: 700;
+	margin-bottom: 20px;
+}
+
+#program a{
+	text-decoration: none;
+	color: #5B4535;
+}
+
+.menu:hover,
+.menu:focus{
+	background: #92CEC4;
+}
+
+.menu{
+	height: 5%;
+	border:1px solid #eee;
+	background: #A4E6DC;
+	margin: 2%;
+	padding: 20px 30px;
+	text-align: center;
+	font-weight: 700;
+	font-size: 1.5em;
+
+	-moz-box-shadow:1px 1px 10px #92CEC4;
+	-webkit-box-shadow:1px 1px 10px #92CEC4;
+	-o-box-shadow:1px 1px 10px #92CEC4;
+	box-shadow:1px 1px 10px #92CEC4;
+}

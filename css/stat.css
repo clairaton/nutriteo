@@ -1,0 +1,51 @@
+/*
+ * STATISTIQUE
+ */
+
+#hide {
+	display: none;
+}
+
+/*.statistique {
+	text-align: center;
+	padding: 50px;
+	margin-top: 50px;
+}*/
+
+	.statistique h2 {
+			color: black;
+	text-align: center;
+	font-size: 2.5em;
+	font-weight: 700;
+	margin-bottom: 20px;
+	}
+
+	.statistique h3 {
+		font-size: 20px;
+	}
+
+	.statistique .content {
+		padding: 0 0 50px 0;
+	}
+
+	.statistique .btn-group {
+		margin-bottom: 30px;
+	}
+
+	.stat-title {
+		margin-bottom: 20px;
+	}
+
+	.element-stat {
+		text-align: left;
+	}
+
+	.stat-aff {
+		width: 885px;
+		height: 173px;
+		background: url(../img/stat-demo.jpg);
+	}
+
+	#calori {
+		margin: 80px 0;
+	}

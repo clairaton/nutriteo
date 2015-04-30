@@ -1,0 +1,36 @@
+/*
+* Suggestion
+*/
+#suggestion{
+	text-align: center;
+}
+
+#suggestion h2{
+	text-align: center;
+	font-size: 35px;
+	margin-bottom: 50px;
+	font-weight: 700;
+}
+
+#suggestion p{
+	text-align: center;
+	font-size: 1.4em;
+	margin-bottom: 50px;
+}
+
+#suggestion form{
+	width: 200px;
+	margin: auto;
+	font-weight: 700;
+	font-size: 1.2em;
+}
+
+#suggestion input{
+	margin-bottom: 30px;
+	margin-top: 10px;
+}
+
+#suggestion label,
+#suggestion input{
+	display: inline;
+}

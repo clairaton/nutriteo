@@ -1,0 +1,44 @@
+/*
+* Nutrition
+*/
+#glossaire h2{
+	text-align: center;
+	font-size: 35px;
+	margin-bottom: 50px;
+	font-weight: 700;
+
+}
+
+#glossaire form{
+	font-size: 1.2em;
+	font-weight: 700;
+}
+
+#glossaire h3{
+	font-size: 20px;
+	font-weight: 600;
+	margin-bottom: 20px;
+	color: #C75453;
+}
+
+#glossaire #description{
+	line-height: 23px;
+}
+
+.case-aliment{
+	width: 100px;
+	height: 100px;
+	background: #f00;
+	border: 1px solid #eee;
+	float: left;
+	margin: 1% ;
+}
+
+#img-aliment a{
+	display: inline-block;
+
+}
+#glossaire-input{
+	margin: 0;
+	padding-left: 10px
+}

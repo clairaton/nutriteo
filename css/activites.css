@@ -1,0 +1,86 @@
+/*
+* Activités physiques
+*/
+
+#tableau-activites{
+	font-size: 20px;
+	padding-bottom: 20px;
+	text-align: center;
+}
+
+#titre{
+	margin-left: 60px;
+}
+
+
+form > div {
+	margin-bottom: 50px;
+}
+
+#slider_activity,
+#slider_duration {
+	max-width: 500px;
+	margin: 10px auto;
+}
+
+#duration-labels,
+#activites-labels {
+	max-width: 500px;
+	margin: auto;
+	height: 20px;
+	position: relative;
+}
+
+#duration-labels li,
+#activites-labels li {
+	display: inline-block;
+	cursor: pointer;
+	position: absolute;
+}
+
+#duration-labels li:first-child,
+#activites-labels li:first-child {
+	left: 0;
+}
+
+#duration-labels li:last-child,
+#activites-labels li:last-child {
+	right: 0;
+}
+
+#activites-labels li:nth-child(2) {
+	left: 42%;
+}
+
+#duration-labels li:nth-child(2) { left: 15%; }
+#duration-labels li:nth-child(3) { left: 31%; }
+#duration-labels li:nth-child(4) { left: 47%; }
+#duration-labels li:nth-child(5) { right: 31%; }
+#duration-labels li:nth-child(6) { right: 15%; }
+
+.ui-widget-content{
+	background: #eee;
+	margin-bottom: 50px;
+}
+
+.ui-state-default,
+.ui-widget-content .ui-state-default,
+.ui-widget-header .ui-state-default {
+	background: #7A9E7E none;
+	border-radius: 15px;
+}
+
+.ui-state-hover,
+.ui-widget-content .ui-state-hover,
+.ui-widget-header .ui-state-hover,
+.ui-state-focus,
+.ui-widget-content .ui-state-focus,
+.ui-widget-header .ui-state-focus {
+	outline: none;
+}
+
+#val{
+	width: 100px;
+	font-size: 18px;
+}
+

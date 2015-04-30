@@ -1,0 +1,158 @@
+/*
+ * Carnet
+ */
+
+/*   head    */
+.content-general{
+	margin: auto;
+	margin-left: 200px;
+	padding: 130px 50px;
+
+}
+
+.head{
+	height: 100px;
+}
+
+.photo-profil{
+	float: left;
+}
+
+.photo-profil img{
+	width: 100px;
+	height: 100px;
+	border: 2px solid #eee;
+	margin-right: 30px;
+}
+.donnee-personnel{
+	float: left;
+}
+
+.name{
+	font-size: 1.2em;
+	font-weight: 700;
+}
+
+h2 .date-inscription{
+	display: block;
+	font-weight: 400;
+}
+
+.radial-progress {
+	float: right;
+	width: 150px;
+	height: 150px;
+}
+
+.program-choisi{
+	margin-top: 25px;
+  	font-size: 1.3em;
+}
+
+/*   content   */
+
+.content{
+	padding-top: 150px;
+}
+
+.content a {
+	color: black;
+	text-transform : uppercase;
+	text-decoration: none;
+}
+
+.progress-bar{
+	width: 0%;
+	background: #33AA67;
+	color: black;
+	font-weight: bold;
+	font-size: 15px;
+}
+
+.progress {
+	padding: 0;
+	background: #C0D7C7;
+	margin-right: 20px;
+}
+
+#btn {
+	position: relative;
+	top: -50px;
+	background-color: white;
+}
+
+
+.question a{
+	font-size: 0.6em;
+	padding: 0 4px;
+	border: 1px solid black;
+	border-radius: 100%;
+	color: black;
+	margin-right: 2px;
+	text-decoration: none;
+}
+
+	.info{
+		display: none;
+		position: absolute;
+		width: 200px;
+		height: 100px;
+		color: #5B4535;
+		background-color: #A4E6DC;
+		border: 1px solid #A4E6DC;
+		padding: 10px;
+		font-size: 12px;
+		box-shadow: 0 0 1em #A4E6DC;
+		border-radius: 5px;
+		z-index: 100;
+	}
+
+	.info:before{
+		content: "";
+		width: 0px;
+		height: 0px;
+		position: absolute;
+		top: 35px;
+		left: 198px;
+		border-style: solid;
+		border-width: 12px 0 12px 20px;
+		border-color: transparent transparent transparent #A4E6DC;
+
+	}
+	.info a{
+		text-decoration: none;
+		color: #FD5F22;
+	}
+
+	.info a:hover{
+		text-decoration: underline;
+
+	}
+
+.panel-heading {
+	height: 50px;
+	padding: 15px 10px;
+}
+
+#panel-family {
+	background-color: #E5E5E5;
+}
+
+.btn-success {
+	background-color: #33AA67;
+}
+
+.btn-sucess:hover {
+	background-color: #339367;
+}
+/*
+*  la moyenne
+*/
+
+#container-speed{
+	/*width: 150px;
+	height: 170px;*/
+	float: right;
+	/*margin-top: -60px;*/
+
+}

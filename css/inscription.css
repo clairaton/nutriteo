@@ -1,0 +1,123 @@
+@import url(http://fonts.googleapis.com/css?family=Source+Sans+Pro:200,300,400,600,700|Cabin+Sketch:400,700);
+
+/*html {
+	width:100%;
+	margin: 0 auto;
+}
+*/
+html h2,
+html p,
+html h3 {
+	font-family: 'Source Sans Pro', sans-serif;
+}
+
+html h2 {
+	font-weight: 600;
+	font-size: 25px;
+	color: #FF6C6B;
+	text-align: center;
+	padding: 0px 20px 15px 20px;
+    margin-top: 0;
+}
+
+#form {
+	width: 500px;
+	margin: 0 auto;
+	font-family: 'Source Sans Pro', sans-serif;
+	text-align: center;
+}
+
+/*.row {
+	width: 100%;
+	margin: 0 auto;
+}*/
+#sport{
+	margin: auto,
+}
+
+#genre p,
+#birthday p,
+#size p,
+#weight p,
+#sport p:first-child,
+#food p:first-child{
+	font-weight: bold;
+	font-size: 15px;
+}
+
+#genre label,
+#genre input {
+	cursor: pointer;
+}
+
+/*#birthday input {
+	height: 27px;
+}*/
+
+/*form div {
+	margin-bottom:10px;
+}*/
+
+
+.choice {
+	border: 1px solid #a7a2a7;
+	border-radius: 5px;
+	margin: 5px;
+	width: 15%;
+	max-width: 200px;
+	min-width: 160px;
+	height: 50px;
+	/*padding: 5px;
+	text-align: center;*/
+	float: left;
+	cursor: pointer;
+}
+
+#sport .choice h3 {
+	font-weight: bold;
+	font-size: 14px;
+	margin-bottom: 5px;
+	margin-top: 5px;
+}
+
+/*#sport .choice p {
+	font-size: 12px;
+}*/
+
+/*#sport p {
+	width: 100%;
+	display: inline-block;
+}*/
+
+.choice:hover {
+	border: 1px solid #f29d9d;
+	background-color: #f29d9d;
+	color: white;
+}
+
+#submit {
+	/*text-align: center;
+	margin: 0 auto;
+	/*margin-left: 40px;
+	margin-bottom: 50px;*/
+}
+
+/*#submit input {
+	width: 150px;
+	margin-top: 20px;
+	padding: 7px;
+}*/
+
+.active {
+	border: 1px solid #FF6C6B;
+	background-color: #FF6C6B;
+	color: white;
+}
+
+/*@media screen and (max-width: 640px) {
+  #submit {
+  	position: absolute;
+  	left: 130px;
+  }
+}*/
+

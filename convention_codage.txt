@@ -1,0 +1,100 @@
+/********************************************************************************************
+ *																					      	*
+ * 									Convention de codage Nutriteo			 				*
+ *														 									*
+ *******************************************************************************************/
+
+----- Nom des fichiers -----
+
+Nommage :
+	Seuls les fichiers de classe démarrent par une majuscule
+	Les différents mots d'un nom de fichier sont séparés par un underscore
+
+
+
+----- PHP/JS -----
+
+Fonctions:
+	camelCase ex:
+	maFonction(){
+		... ;
+	}
+
+Variables:
+	mots séparés en par un underscore $nom_variable
+
+
+Classes :
+	nommées en Majuscule sur la première lettre ex: Class
+	variables privées débutent par un underscore ex _variable
+
+
+Condition :
+	accolades sur la ligne du if ex:
+	if(condition){
+		... ;
+	}
+
+Indentation
+	Pas d'indent using space space tab width = 4
+
+Commentaires :
+	Tous les fichiers de code source doivent commencer par une description ex:
+		/**
+		 * Courte description du fichier
+		 *
+		 * Description plus détaillée du fichier (si besoin en est)...
+		 *
+		 * @author     Auteur original <auteur@example.com>
+		 */
+
+	En dev utuiliser des lignes de commentaires @TODO pour identifier les taches à effectuer plus tard pour compléter le code existant
+
+Chaîne de caractères :
+	Dans la mesure du possible on utilisera le simple quote ' '
+
+
+
+
+----- SQL -----
+
+Nom des Tables BDD:
+	mots séparés en par un underscore nom_table
+
+
+
+----- HTML/CSS ----
+
+Nom des attributs :
+	Les mots doivent être séparés par des tirets. Exemple: nom-classe
+
+Chaîne de caractères :
+	Dans la mesure du possible on utilisera les doubles quote " "
+
+
+----- CSS -----
+
+Commentaires :
+	Le fichier doit être organisé avec des en-tête de commentaires type et comprendre un sommaire en entête
+
+	/************************************************
+	*					Général						*
+	************************************************/
+
+	/************************************************
+	*					Header						*
+	************************************************/
+
+		/********		Nav 		********/
+
+	/************************************************
+	*					Main						*
+	************************************************/
+
+	/************************************************
+	*					Footer						*
+	************************************************/
+
+
+
+

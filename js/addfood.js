@@ -52,7 +52,90 @@ addfood = {
 		$('body').on("click", "#bt-oui", function(){document.location.href="activites.php"})
 		$('body').on("click", "#bt-non", function(){document.location.href="carnet.php"})
 
+		//Ecouter le bouton addFoof .btn-addFood
+		$("body").on("click", ".btn-addFood", addfood.addFoodBox)
+		$("body").on("click", "#annuler", addfood.addFoodBoxClose)
+		//initialisation de la variable add_food_box_html
+		$.ajax({
+			url: "searchFoodContent.php",
+			success: addfood.addFoodBoxContent
+		})
+
+		//Autocompletion
+		$("body").on("click", "#search-food", addfood.searchAutoComplet)
+		$("body").on("autocompleteselect", "#search-food", addfood.foodSelected)
+
 	},
+
+	searchAutoComplet: function(e){
+		console.info("addfood.searchAutoComplet")
+		$(this).autocomplete({source: addfood.list_food})
+	},
+
+	list_food: [],
+
+	foodSelected: function(e, ui){
+		console.info("addfood.foodSelected")
+		console.log($(this).val())
+		console.log(ui.item.value)
+		var div = $("<div>", {class: "food-select"})
+		var span = $("<span>", {class: "glyphicon glyphicon-star-empty", ariaHidden: "true"})
+		var checkbox = $("<input>", {type: "checkbox"})
+		var p = $("<p>").html(ui.item.value)
+		var div_portion = $("<div>", {class: "portion-form"})
+		var portion = $("select", {class: "form-control", name: "portion"})
+		var portion_option = $("option").text("1 Portion")
+
+		portion.append(portion_option)
+
+		div_portion.append(portion)
+					.append(" / 70g")
+
+		div.append(span)
+			.append(checkbox)
+			.append(p)
+			.append(div_portion)
+
+		$("#result-search").append(div)
+	}, 
+	
+	addFoodBox: function(e){
+		console.info("addfood.addFoodBox")
+		var repas = $(this).parent().prev()
+		var add_food_box = repas.next()
+		add_food_box.html("")
+					.removeClass('add_item')
+					.addClass('item-adding', 800)
+		add_food_box.html(addfood.add_food_box_html)
+	},
+
+	addFoodBoxClose: function(e){
+		console.info("addfood.addFoodBoxClose")
+		var repas = $(this).parent().parent().parent().prev()
+		var add_food_box = repas.next()
+
+		console.log(add_food_box.attr("class"))
+		add_food_box.html("")
+					.removeClass('item-adding')
+					.addClass('add_item', 800)
+
+		var btn_addFood = $('<button>')
+		btn_addFood.addClass("btn-addFood")
+		var span = $("<span>")
+		span.addClass("glyphicon glyphicon-plus")
+		
+		btn_addFood.html(span)
+					.append(" Ajouter un aliment")
+
+		add_food_box.html(btn_addFood)
+	},
+
+	addFoodBoxContent: function(html){
+		console.info("addfood.addFoodBoxContent")
+		addfood.add_food_box_html = html
+	},
+
+	add_food_box_html: "",
 
 	AddFoodToAddPhysique: function(html){
 		console.info("addfood.responseAddFood")
@@ -287,9 +370,23 @@ addfood = {
 	}
 }
 
+/*addfoodNew = {
+	
+	init: function() {
+		console.info("addfoodNew.init")
+		$(".addfood button").on("click", addfoodNew.open)
+	},
+
+	open: function(e) {
+		console.info("addfoodNew.open")
+		$(this).hide()
+	}
+}*/
+
 /*
  * Chargement du DOM
  */
 $(function(){
 	addfood.init()
+	/*addfoodNew.init()*/
 })

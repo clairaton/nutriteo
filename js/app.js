@@ -126,8 +126,6 @@ app = {
 	 */
 	init: function() {
 		console.info("app.init")
-
-		$('.collapse').collapse()
 	},
 }
 

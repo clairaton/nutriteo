@@ -12,18 +12,19 @@
 			?>
 
 			<div class="panel panel-default nutriement" id="<?= $nutriement['id'] ?>">
-				<div class="panel-heading" id="panel-family">
+				<div class="panel-heading" class="panel-family">
 					<h3 class="col-md-3 col-sm-12 col-xs-7">
-						<span class="question" ><a href="javascript:void(0);" rel="info" title="test info bull">?</a></span>
+						<span class="question" ><a href="javascript:void(0);" rel="info" title="test info bull"><img src="img/icon-bubble.png" width="13px" height="13px"></a></span>
 
 						<a href="nutrition.php?family_id=<?= $nutriement['id']; ?>" name="<?= $nutriement['id'] ?>"  ><?=$nutriement['name'] ?></a>
 
 					</h3><!--End of h3-->
 
 					<a data-toggle="collapse" data-parent="#accordion" href="#collapse<?= $i ?>">
-						<div class="progress col-md-7 col-sm-10 col-xs-10">
-							<div class="progress-bar" style="width: <?=$nutriement['realisation']*100 ?>%"><?= intval($nutriement['realisation']*100) ?>%</div>
+						<div class="progress col-md-5 col-sm-5 col-xs-3">
+							<div class="progress-bar" style="width: <?=$nutriement['realisation']*100 ?>%"></div>
 						</div>
+						<div id="percentage-rslt"><?= intval($nutriement['realisation']*100) ?>%</div>
 					</a>
 					<h3><?= intval($nutriement['real_quantity']) ?> / <?= intval($nutriement['obj_quantity']) ?> <?= $nutriement['unity'] ?></h3>
 				</div>
@@ -37,16 +38,19 @@
 							?>
 							<div class="panel-heading">
 								<h3 class="col-md-3 col-sm-4 col-xs-12 panel-title">
-									<span class="question" ><a href="javascript:void(0);" rel="info" title="test info bull">?</a></span>
+									<span class="question" ><a href="javascript:void(0);" rel="info" title="test info bull"><img src="img/icon-bubble.png" width="11px" height="11px"></a></span>
 
-									<a href="nutrition.php?id=<?= $dashboard_by_nutriment[$id]['id']; ?>" name="<?= $dashboard_by_nutriment[$id]['id'] ?>"  ><?=$dashboard_by_nutriment[$id]['name'] ?></a>
-
+									<div class="sous-cat-name">
+										<a href="nutrition.php?id=<?= $dashboard_by_nutriment[$id]['id']; ?>" name="<?= $dashboard_by_nutriment[$id]['id'] ?>"  ><?=$dashboard_by_nutriment[$id]['name'] ?></a>
+									</div>
 								</h3><!--End of h3-->
 
 								<a data-toggle="collapse" data-parent="#accordion" href="#collapse<?= $i ?>">
-									<div class="progress col-md-7 col-sm-6 col-xs-10 ">
-										<div class="progress-bar" style="width: <?=$dashboard_by_nutriment[$id]['realisation']*100 ?>%"><?= intval($dashboard_by_nutriment[$id]['realisation']*100) ?>%</div>
+									<div class="progress col-md-5 col-sm-5 col-xs-3" id="sous-progress">
+										<div class="progress-bar" style="width: <?=$dashboard_by_nutriment[$id]['realisation']*100 ?>%">
+										</div>
 									</div>
+									<div id="sous-percentage-rslt"><?= intval($dashboard_by_nutriment[$id]['realisation']*100) ?>%</div>
 								</a>
 
 							</div>

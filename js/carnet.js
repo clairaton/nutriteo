@@ -32,11 +32,11 @@ moyenne = {
 
 		        pane: {
 		            size: '70%',
-		            center: ['50%', '35%'],
+		            center: ['45%', '35%'],
 		            startAngle: 0,
 		            endAngle: 360,
 		            background: {
-		                backgroundColor: (Highcharts.theme && Highcharts.theme.background2) || '#EEE',
+		                backgroundColor: (Highcharts.theme && Highcharts.theme.background2) || '#d7d7d7',
 		                innerRadius: '60%',
 		                outerRadius: '100%',
 		                shape: 'circle'
@@ -50,15 +50,15 @@ moyenne = {
 		         // the value axis
 		        yAxis: {
 		            stops: [
-		            	[0.1, '#C70000'],
-		            	[0.2, '#D53600'],
-		            	[0.3, '#E36C01'],
-		            	[0.4, '#F1A202'],
-		            	[0.5, '#FFD903'],
-		            	[0.6, '#a8d102'],
-		            	[0.7, '#8EBF05'],
-		            	[0.8, '#56B206'],
-		            	[0.9, '#1EA607']
+		            	[0.1, '#3ebee5'],
+		            	[0.2, '#3ebee5'],
+		            	[0.3, '#3ebee5'],
+		            	[0.4, '#3ebee5'],
+		            	[0.5, '#3ebee5'],
+		            	[0.6, '#3ebee5'],
+		            	[0.7, '#3ebee5'],
+		            	[0.8, '#3ebee5'],
+		            	[0.9, '#3ebee5']
 		            ],
 		            lineWidth: 0,
 		            minorTickInterval: null,
@@ -91,7 +91,7 @@ moyenne = {
 		            min: 0,
 		            max: 100,
 		            title: {
-		                text: 'Nutriscore',
+		                text: '',
 		                style: {'fontSize': '18px'}
 		            },
 		            labels: {
@@ -106,12 +106,13 @@ moyenne = {
 		        series: [{
 		            data: [nutriscore],
 		            dataLabels: {
-		                format: '<div style="text-align:center"><span style="font-size:15px;color:' +
-		                    ((Highcharts.theme && Highcharts.theme.contrastTextColor) || 'black') + '">{y}%</span>',
+		                format: '<div style="text-align:center"><span style="font-size:17px;color:' +
+		                    ((Highcharts.theme && Highcharts.theme.contrastTextColor) || '#0a1038') + '">{y}%</span>',
 		                verticalAlign: 'middle'
 		            },
 		            tooltip: {
 		                valueSuffix: ' %'
+
 		            }
 		        }]
 

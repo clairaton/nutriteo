@@ -4,6 +4,7 @@
 		<script type="" src="js/jquery.js"></script>
 		<script type="" src="js/jquery-ui.min.js"></script>
 		<script type="" src="js/datepicker-fr.js"></script>
+		<script type="" src="js/jquery-ui.min-autocomplet.js"></script>
 		<script src="http://code.highcharts.com/highcharts.js"></script>
 		<script src="http://code.highcharts.com/highcharts-more.js"></script>
 		<script src="http://code.highcharts.com/modules/solid-gauge.js"></script>
